@@ -6,21 +6,8 @@
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
-<input placeholder="请输入谭老师很帅" id="theInput" style="font-size: 30px;width: 300px">
-<button id="theButton" style="font-size: 26px">提交</button>
-<p id="theP" style="display: none;font-size: 30px;">你真的很有眼光!</p>
+
+<p>端口：8001</p>
 </body>
-<script>
-    document.getElementById('theButton').addEventListener('click', e => {
-        let str = document.getElementById('theInput')
-        let pEle = document.getElementById('theP')
-        if (str.value === "谭老师很帅") {
-            pEle.style.display = 'block'
-            pEle.innerText = '你真的很有眼光!'
-        }else if(str.value !== "谭老师很帅") {
-            pEle.style.display = 'block'
-            pEle.innerText = '你是真不长眼！'
-        }
-    })
-</script>
+
 </html>
